@@ -12,6 +12,8 @@ root.right = TreeNode(8)
 root.left.left = TreeNode(5)
 root.left.right = TreeNode(7)
 root.right.right = TreeNode(13)
+root.right.left = TreeNode(24)
+root.right.left.left = TreeNode(9)
 
 print "Inorder iteration:"
 inorderIterative(root)

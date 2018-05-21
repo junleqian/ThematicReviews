@@ -21,3 +21,4 @@ def inorderTraversal(root):
             print node.val
             if node.right is not None:
                 s.append(node.right)
+                curr = node.right.left
