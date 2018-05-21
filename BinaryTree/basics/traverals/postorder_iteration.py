@@ -25,11 +25,11 @@ def postorderTraversal(root):
         s2.append(node)
         # push left child of the node if not empty to s1
         if node.left is not None:
-            s1.append(node)
+            s1.append(node.left)
         if node.right is not None:
-            s1.append(node)
+            s1.append(node.right)
 
-    # nodes stored in s2 are already in reverse-post-order
+    # nodes stored in s2 are already in reverse-post-order from top to bottom
     # pop each of them and print to print the post-order traversal
     while len(s2) != 0:
         node = s2.pop()

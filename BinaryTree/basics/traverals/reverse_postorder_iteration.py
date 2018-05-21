@@ -18,5 +18,7 @@ def reversePostorderTraversal(root):
       # instead of storing it into a second stack, just print it
       print node.val
       # push left, right into the s1
-      s1.append(node.left) if node.left is not None
-      s1.append(node.right) if node.left is not None
+      if node.left is not None:
+        s1.append(node.left)
+      if node.right is not None:
+        s1.append(node.right)
