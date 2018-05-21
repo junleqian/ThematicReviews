@@ -6,6 +6,11 @@ class TreeNode(object):
         self.left = None
         self.right = None
         self.val = val
+
+solution Complexity
+Time: O(N)
+Space: O(N) on function stack
+
 """
 
 

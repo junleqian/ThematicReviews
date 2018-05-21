@@ -4,6 +4,9 @@ recursion.
 
 Hint: use more stacks
 
+O(N)
+O(N)
+
 """
 
 def postorderTraversal(root):

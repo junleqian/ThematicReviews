@@ -4,6 +4,12 @@ no recursion.
 
 Hint: think about using some data structures.
 
+Tree has N nodes.
+
+Solution
+    Time Complexity: worst case O(N) average case O(N)
+    Space Complexity: worst case O(N) average O(N)
+
 """
 
 
