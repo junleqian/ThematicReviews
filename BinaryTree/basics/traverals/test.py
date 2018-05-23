@@ -4,6 +4,9 @@ from postorder_iteration import postorderTraversal as postorderIterative
 from postorder_recursion import postorderTraversal as postorderRecursive
 from reverse_postorder_iteration import reversePostorderTraversal as reversePostorderIterative
 from levelorder_iteration import levelorderTraversal as levelorderIterative
+from levelorder_traversal_array import level_order_array as levelorderArray
+from levelorder_traversal_array import level_order_array_bottom as levelorderArrayBottom
+
 from test_treenode import TreeNode
 
 root = TreeNode(3)
@@ -31,3 +34,9 @@ reversePostorderIterative(root)
 
 print "Levelorder iteration:"
 levelorderIterative(root)
+
+print "Levelorder array:"
+print levelorderArray(root)
+
+print "Levelorder array bottom:"
+print levelorderArrayBottom(root)
