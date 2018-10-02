@@ -7,15 +7,19 @@ class TreeNode(object):
         self.right = None
         self.val = val
 """
+def preorderTraversal(root):
+    _preorderTraversal(root)
+    print ""
 
-def preorderTraveral(root):
+
+def _preorderTraversal(root):
     if root is None:
         return
 
-    print root.val
+    print "{}".format(root.val),
 
     if root.left is not None:
-        preorderTraversal(root.left)
+        _preorderTraversal(root.left)
 
     if root.right is not None:
-        preorderTraversal(root.right)
+        _preorderTraversal(root.right)

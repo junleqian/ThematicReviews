@@ -30,7 +30,7 @@ def levelorderTraversal(root):
     while len(deq) != 0:
         # dequeue a node at the front and print it
         node = deq.popleft()
-        print node.val
+        print node.val,
         # enqueue left and right child if not None
         if node.left is not None:
             deq.append(node.left)

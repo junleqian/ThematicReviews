@@ -9,13 +9,17 @@ class TreeNode(object):
 """
 
 def postorderTraversal(root):
+    _postorderTraversal(root)
+    print ""
+
+def _postorderTraversal(root):
     if root is None:
         return
 
     if root.left is not None:
-        postorderTraversal(root.left)
+        _postorderTraversal(root.left)
 
     if root.right is not None:
-        postorderTraversal(root.right)
+        _postorderTraversal(root.right)
 
-    print root.val
+    print "{}".format(root.val),

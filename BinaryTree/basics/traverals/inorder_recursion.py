@@ -13,15 +13,19 @@ Space: O(N) on function stack
 
 """
 
-
 def inorderTraversal(root):
+    _inorderTraversal(root)
+    print ""
+
+
+def _inorderTraversal(root):
     if root is None:
         return
 
     if root.left is not None:
-        inorderTraversal(root.left)
+        _inorderTraversal(root.left)
 
-    print root.val
+    print "{}".format(root.val),
 
     if root.right is not None:
-        inorderTraversal(root.right)
+        _inorderTraversal(root.right)

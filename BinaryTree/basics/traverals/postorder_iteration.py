@@ -33,4 +33,5 @@ def postorderTraversal(root):
     # pop each of them and print to print the post-order traversal
     while len(s2) != 0:
         node = s2.pop()
-        print node.val
+        print "{}".format(node.val),
+    print ""

@@ -13,9 +13,10 @@ def preorderTraversal(root):
         # pop a node from the stack
         node = s.pop()
         # print the traversed value
-        print node.val
+        print "{}".format(node.val),
         # push in right child if not None
-        if node.left is not None:
-            s.append(node.left)
         if node.right is not None:
             s.append(node.right)
+        if node.left is not None:
+            s.append(node.left)
+    print ""

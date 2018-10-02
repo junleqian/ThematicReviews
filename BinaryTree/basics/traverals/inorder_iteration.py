@@ -18,7 +18,8 @@ def inorderTraversal(root):
             curr = curr.left
         elif len(s) != 0:
             node = s.pop()
-            print node.val
+            print "{}".format(node.val),
             if node.right is not None:
                 s.append(node.right)
                 curr = node.right.left
+    print ""

@@ -1,3 +1,5 @@
+from preorder_iteration import preorderTraversal as preorderIterative
+from preorder_recursion import preorderTraversal as preorderRecursive
 from inorder_iteration import inorderTraversal as inorderIterative
 from inorder_recursion import inorderTraversal as inorderRecursive
 from postorder_iteration import postorderTraversal as postorderIterative
@@ -18,6 +20,12 @@ root.right.right = TreeNode(13)
 root.right.left = TreeNode(24)
 root.right.left.left = TreeNode(9)
 root.right.left.left.left = TreeNode(23)
+
+print "Preorder iteration:"
+preorderIterative(root)
+print "Preorder recursive:"
+preorderRecursive(root)
+
 print "Inorder iteration:"
 inorderIterative(root)
 print "Inorder recursion:"

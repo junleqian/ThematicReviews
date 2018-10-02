@@ -16,9 +16,10 @@ def reversePostorderTraversal(root):
       # while s1 is not empty, pop a node from s1
       node = s1.pop()
       # instead of storing it into a second stack, just print it
-      print node.val
+      print "{}".format(node.val),
       # push left, right into the s1
       if node.left is not None:
         s1.append(node.left)
       if node.right is not None:
         s1.append(node.right)
+    print ""
